@@ -1,0 +1,120 @@
+@import "settings";
+@import "foundation";
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+
+
+#wall{
+	background : url('../../template/home/image/wall.jpg');
+	background-size: cover;
+	height:25em;
+	padding-top:8.7em;
+	h1, h2{
+		color:$white;
+		text-shadow: 2px 2px 4px #000;
+	}
+	border-bottom: 2px solid $ghost;
+	#menu {
+		position:fixed;
+		margin-top:-8em;
+		margin-left:0.5em;
+		z-index:999;
+		border: 0.2em solid $white;
+		background: $white;
+		border-radius: 5px;
+	}
+}
+
+#post_info{
+	margin-bottom:0.8em;
+	color: #738089;
+	img{
+		border-radius: 5px;
+  		vertical-align: middle;
+  		width: 2em;
+	}
+	.mention{
+		font-size:0.7em;
+		margin-left:0.5em;
+	}
+}
+
+#post_info_footer{
+	margin-bottom:0.8em;
+	color: #738089;
+	img{
+		border-radius: 5px;
+  		vertical-align: middle;
+  		width: 4em;
+	}
+	.mention{
+		font-size:0.8em;
+		margin-left:0.5em;
+		margin-top:-4.8em;
+		margin-left:6.5em;
+		max-width : 20em;
+		span{
+			font-size:1.1em;
+			color: $tuatara;
+		}
+	}
+	.title_info_footer{
+		font-size:0.8em;
+		margin-bottom:1em;
+	}
+}
+
+#content{
+	padding-top:1em;
+	text-align:justify;
+	hr{
+		margin-top:0.8em;
+		border: 0;
+		width:2em;
+		height:0.4em;
+		background-color:$primary_color;
+	}
+}
+
+#footer{
+	padding-top:4em;
+	padding-bottom:1em;
+	font-size:0.75em;
+}
