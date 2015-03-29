@@ -2341,8 +2341,8 @@ select {
 .breadcrumbs > * {
   margin: 0;
   float: left;
-  font-size: 0.6875rem;
-  line-height: 0.6875rem;
+  font-size: 0.9375rem;
+  line-height: 0.9375rem;
   text-transform: uppercase;
   color: #B38950;
 }
