@@ -9169,7 +9169,7 @@ th.hide-for-touch {
 /* line 49, ../scss/app.scss */
 #wall h1, #wall h2 {
   color: #FFFFFF;
-  text-shadow: 2px 2px 4px #000;
+  text-shadow: 1px 1px 4px #000;
 }
 
 /* line 57, ../scss/app.scss */
@@ -9183,76 +9183,78 @@ th.hide-for-touch {
   border: none;
   padding-top: 2.2rem;
   padding-bottom: 2.2rem;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
-/* line 68, ../scss/app.scss */
+/* line 70, ../scss/app.scss */
 .post_list_title {
   color: #FFFFFF;
-  text-shadow: 2px 2px 4px #000;
-  font-size: 2rem;
+  text-shadow: 1px 1px 4px #000;
+  font-size: 1.8rem;
   text-align: center;
 }
 
-/* line 75, ../scss/app.scss */
+/* line 77, ../scss/app.scss */
 .post_list_subtitle {
   color: #FFFFFF;
-  text-shadow: 2px 2px 4px #000;
-  font-size: 1.5rem;
+  text-shadow: 1px 1px 4px #000;
+  font-size: 1.3rem;
   text-align: center;
 }
 
-/* line 82, ../scss/app.scss */
+/* line 84, ../scss/app.scss */
 .post_list_content {
   padding-top: 1rem;
 }
 
-/* line 87, ../scss/app.scss */
+/* line 89, ../scss/app.scss */
 .post_list_info {
   margin-top: 1.2rem;
   color: #FFFFFF;
-  text-shadow: 2px 2px 4px #000;
+  text-shadow: 1px 1px 4px #000;
 }
-/* line 91, ../scss/app.scss */
+/* line 93, ../scss/app.scss */
 .post_list_info img {
   border-radius: 5px;
   vertical-align: middle;
   width: 2rem;
 }
-/* line 96, ../scss/app.scss */
+/* line 98, ../scss/app.scss */
 .post_list_info .mention {
   font-size: 0.8rem;
   margin-left: 0.5rem;
 }
 
-/* line 103, ../scss/app.scss */
+/* line 105, ../scss/app.scss */
 #post_info {
   margin-bottom: 0.8rem;
   color: #738089;
 }
-/* line 106, ../scss/app.scss */
+/* line 108, ../scss/app.scss */
 #post_info img {
   border-radius: 5px;
   vertical-align: middle;
   width: 2rem;
 }
-/* line 111, ../scss/app.scss */
+/* line 113, ../scss/app.scss */
 #post_info .mention {
   font-size: 0.8rem;
   margin-left: 0.5rem;
 }
 
-/* line 117, ../scss/app.scss */
+/* line 119, ../scss/app.scss */
 #post_info_footer {
   margin-bottom: 0.8rem;
   color: #738089;
 }
-/* line 120, ../scss/app.scss */
+/* line 122, ../scss/app.scss */
 #post_info_footer img {
   border-radius: 5px;
   vertical-align: middle;
   width: 5rem;
 }
-/* line 125, ../scss/app.scss */
+/* line 127, ../scss/app.scss */
 #post_info_footer .mention {
   font-size: 0.9rem;
   margin-left: 0.5rem;
@@ -9260,31 +9262,31 @@ th.hide-for-touch {
   margin-left: 6.5rem;
   max-width: 15rem;
 }
-/* line 131, ../scss/app.scss */
+/* line 133, ../scss/app.scss */
 #post_info_footer .mention span {
   font-size: 1.1rem;
   color: #444444;
 }
-/* line 136, ../scss/app.scss */
+/* line 138, ../scss/app.scss */
 #post_info_footer .title_info_footer {
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
 
-/* line 142, ../scss/app.scss */
+/* line 144, ../scss/app.scss */
 .post_article_link {
   margin-top: 3rem;
 }
-/* line 144, ../scss/app.scss */
+/* line 146, ../scss/app.scss */
 .post_article_link a {
   font-size: 0.9rem;
 }
 
-/* line 149, ../scss/app.scss */
+/* line 151, ../scss/app.scss */
 #content {
   text-align: justify;
 }
-/* line 151, ../scss/app.scss */
+/* line 153, ../scss/app.scss */
 #content hr {
   margin-top: 0.8rem;
   border: 0;
@@ -9293,7 +9295,7 @@ th.hide-for-touch {
   background-color: #B38950;
 }
 
-/* line 160, ../scss/app.scss */
+/* line 162, ../scss/app.scss */
 #footer {
   padding-top: 4rem;
   padding-bottom: 1rem;

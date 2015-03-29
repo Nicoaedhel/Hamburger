@@ -48,7 +48,7 @@
 	padding-top:8.7rem;
 	h1, h2{
 		color:$white;
-		text-shadow: 2px 2px 4px #000;
+		text-shadow: 1px 1px 4px #000;
 	}
 	border-bottom: 2px solid $ghost;
 	margin-bottom:1rem;
@@ -63,19 +63,21 @@
   	border: none;
   	padding-top:2.2rem;
   	padding-bottom:2.2rem;
+  	border-bottom-right-radius: 0px;
+  	border-bottom-left-radius: 0px;
 }
 
 .post_list_title{
 	color:$white;
-	text-shadow: 2px 2px 4px #000;
-	font-size:2rem;
+	text-shadow: 1px 1px 4px #000;
+	font-size:1.8rem;
 	text-align:center;
 }
 
 .post_list_subtitle{
 	color:$white;
-	text-shadow: 2px 2px 4px #000;
-	font-size:1.5rem;
+	text-shadow: 1px 1px 4px #000;
+	font-size:1.3rem;
 	text-align:center;
 }
 
@@ -87,7 +89,7 @@
 .post_list_info{
 	margin-top:1.2rem;
 	color: $white;
-	text-shadow: 2px 2px 4px #000;
+	text-shadow: 1px 1px 4px #000;
 	img{
 		border-radius: 5px;
   		vertical-align: middle;
