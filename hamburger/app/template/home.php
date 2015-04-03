@@ -1,4 +1,5 @@
-<div id="wall" style="background : url('my_hamburger/wall.jpg'); background-size: cover; " >
+<?php $app->render('header.php', array('path' => $path)); // load ui ?>
+      <div id="wall" style="background : url('<?= $path; ?>my_hamburger/wall.jpg'); background-size: cover; " >
        	<div class="row">
           <div class="large-12 columns">
             <center>
@@ -14,14 +15,14 @@
           <div class="large-9 medium-11 medium-centered large-centered columns">
 
             <div class="post_list">
-              <a href="">
-                <div class="post_list_img" style="background : url('my_hamburger/wall.jpg'); background-size: cover; " >
-                  <div class="post_list_title">Welcome to Hamburger</div>
-                  <div class="post_list_subtitle">nOm nOm nOm nOm !</div>
+              <a href="article/<?= $article[0]['href']; ?>">
+                <div class="post_list_img" style="background : url('<?= $path; ?>my_hamburger/article/<?= $article[0]['href']; ?>/images/<?= $article[0]['wall']; ?>'); background-size: cover; " >
+                  <div class="post_list_title"><?= $article[0]['title']; ?></div>
+                  <div class="post_list_subtitle"><?= $article[0]['subtitle']; ?></div>
                   <div class="post_list_info">
                     <center>
-                      <img src="my_hamburger/avatar/default.png" />
-                      <span class="mention">Monsieur Hiboux on March 16, 2015</span>
+                      <img src="<?= $path; ?>my_hamburger/avatar/<?= $article[0]['avatar']; ?>" />
+                      <span class="mention"><?= $article[0]['author']; ?> <?= $article[0]['date']; ?></span>
                     </center>
                   </div>
                 </div>
@@ -47,12 +48,12 @@
 
                 <div class="post_list">
                   <a href="">
-                    <div class="post_list_img" style="background : url('my_hamburger/wall.jpg'); background-size: cover; " >
+                    <div class="post_list_img" style="background : url('<?= $path; ?>my_hamburger/wall.jpg'); background-size: cover; " >
                       <div class="post_list_title">Welcome to Hamburger</div>
                       <div class="post_list_subtitle">nOm nOm nOm nOm !</div>
                       <div class="post_list_info">
                         <center>
-                          <img src="my_hamburger/avatar/default.png" />
+                          <img src="<?= $path; ?>my_hamburger/avatar/default.png" />
                           <span class="mention">Monsieur Hiboux on March 16, 2015</span>
                         </center>
                       </div>
@@ -80,12 +81,12 @@
 
                 <div class="post_list">
                   <a href="">
-                    <div class="post_list_img" style="background : url('my_hamburger/wall.jpg'); background-size: cover; " >
+                    <div class="post_list_img" style="background : url('<?= $path; ?>my_hamburger/wall.jpg'); background-size: cover; " >
                       <div class="post_list_title">Welcome to Hamburger</div>
                       <div class="post_list_subtitle">nOm nOm nOm nOm !</div>
                       <div class="post_list_info">
                         <center>
-                          <img src="my_hamburger/avatar/default.png" />
+                          <img src="<?= $path; ?>my_hamburger/avatar/default.png" />
                           <span class="mention">Monsieur Hiboux on March 16, 2015</span>
                         </center>
                       </div>
@@ -114,3 +115,5 @@
           </div>
         </div>
       </div>
+
+      <?php $app->render('footer.php', array('path' => $path)); // load en ui ?>
