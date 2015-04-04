@@ -31,12 +31,7 @@
               <div class="post_list_content">
                 <div class="post_list_description">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum ... <a href="">Read +</a>
+                   <?= $article[0]['ads']; ?> <br /><a href="article/<?= $article[0]['href']; ?>">Read +</a>
                   </p>
                 </div>
               </div>
@@ -44,72 +39,103 @@
             </div>
 
             <div class="row">
-              <div class="large-6  columns">
+              <?php 
+              $i=1;
+              $number_article = count($article);
+              if($number_article > 1){
+                if ($number_article%2 == 0){
+                  while ($i <= ($number_article -2)) {
+                    echo'
+                    <div class="large-6  columns">
+                      <div class="post_list">
+                        <a href="article/'.$article[$i]['href'].'">
+                          <div class="post_list_img" style="background : url(\''.$path.'my_hamburger/article/'.$article[$i]['href'].'/images/'.$article[$i]['wall'].'\'); background-size: cover; " >
+                            <div class="post_list_title">'.$article[$i]['title'].'</div>
+                            <div class="post_list_subtitle">'.$article[$i]['subtitle'].'</div>
+                            <div class="post_list_info">
+                              <center>
+                                <img src="'.$path.'my_hamburger/avatar/'.$article[$i]['avatar'].'" />
+                                <span class="mention">'.$article[$i]['author'].' '.$article[$i]['date'].'</span>
+                              </center>
+                            </div>
+                          </div>
+                        </a>
 
-                <div class="post_list">
-                  <a href="">
-                    <div class="post_list_img" style="background : url('<?= $path; ?>my_hamburger/wall.jpg'); background-size: cover; " >
-                      <div class="post_list_title">Welcome to Hamburger</div>
-                      <div class="post_list_subtitle">nOm nOm nOm nOm !</div>
-                      <div class="post_list_info">
-                        <center>
-                          <img src="<?= $path; ?>my_hamburger/avatar/default.png" />
-                          <span class="mention">Monsieur Hiboux on March 16, 2015</span>
-                        </center>
+                        <div class="post_list_content">
+                          <div class="post_list_description">
+                            <p>
+                             '.$article[$i]['ads'].' <br /><a href="article/'.$article[$i]['href'].'">Read +</a>
+                            </p>
+                          </div>
+                        </div>
+                        <hr />
                       </div>
-                    </div>
-                  </a>
+                    </div>'; 
+                    $i++;
+                  }
+                  $i = $number_article-1;
+                  echo'
+                    <div class="large-12  columns">
+                      <div class="post_list">
+                        <a href="article/'.$article[$i]['href'].'">
+                          <div class="post_list_img" style="background : url(\''.$path.'my_hamburger/article/'.$article[$i]['href'].'/images/'.$article[$i]['wall'].'\'); background-size: cover; " >
+                            <div class="post_list_title">'.$article[$i]['title'].'</div>
+                            <div class="post_list_subtitle">'.$article[$i]['subtitle'].'</div>
+                            <div class="post_list_info">
+                              <center>
+                                <img src="'.$path.'my_hamburger/avatar/'.$article[$i]['avatar'].'" />
+                                <span class="mention">'.$article[$i]['author'].' '.$article[$i]['date'].'</span>
+                              </center>
+                            </div>
+                          </div>
+                        </a>
 
-                  <div class="post_list_content">
-                    <div class="post_list_description">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum ... <a href="">Read +</a>
-                      </p>
-                    </div>
-                  </div>
-                  <hr />
-                </div>
-
-              </div>
-
-              <div class="large-6 columns">
-
-                <div class="post_list">
-                  <a href="">
-                    <div class="post_list_img" style="background : url('<?= $path; ?>my_hamburger/wall.jpg'); background-size: cover; " >
-                      <div class="post_list_title">Welcome to Hamburger</div>
-                      <div class="post_list_subtitle">nOm nOm nOm nOm !</div>
-                      <div class="post_list_info">
-                        <center>
-                          <img src="<?= $path; ?>my_hamburger/avatar/default.png" />
-                          <span class="mention">Monsieur Hiboux on March 16, 2015</span>
-                        </center>
+                        <div class="post_list_content">
+                          <div class="post_list_description">
+                            <p>
+                             '.$article[$i]['ads'].' <br /><a href="article/'.$article[$i]['href'].'">Read +</a>
+                            </p>
+                          </div>
+                        </div>
+                        <hr />
                       </div>
-                    </div>
-                  </a>
+                    </div>';
+                }
+                else{
+                  while ($i <= ($number_article -1)) {
+                    echo'
+                    <div class="large-6  columns">
+                      <div class="post_list">
+                        <a href="article/'.$article[$i]['href'].'">
+                          <div class="post_list_img" style="background : url(\''.$path.'my_hamburger/article/'.$article[$i]['href'].'/images/'.$article[$i]['wall'].'\'); background-size: cover; " >
+                            <div class="post_list_title">'.$article[$i]['title'].'</div>
+                            <div class="post_list_subtitle">'.$article[$i]['subtitle'].'</div>
+                            <div class="post_list_info">
+                              <center>
+                                <img src="'.$path.'my_hamburger/avatar/'.$article[$i]['avatar'].'" />
+                                <span class="mention">'.$article[$i]['author'].' '.$article[$i]['date'].'</span>
+                              </center>
+                            </div>
+                          </div>
+                        </a>
 
-                  <div class="post_list_content">
-                    <div class="post_list_description">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum ... <a href="">Read +</a>
-                      </p>
-                    </div>
-                  </div>
-                  <hr />
-                </div>
-
-              </div>
-
+                        <div class="post_list_content">
+                          <div class="post_list_description">
+                            <p>
+                             '.$article[$i]['ads'].' <br /><a href="article/'.$article[$i]['href'].'">Read +</a>
+                            </p>
+                          </div>
+                        </div>
+                        <hr />
+                      </div>
+                    </div>'; 
+                    $i++;
+                  }
+                }
+                  
+                
+              } 
+              ?>
             </div> 
 
           </div>

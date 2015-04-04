@@ -20,6 +20,7 @@ function _article_list(){
 				$article[$i]['date'] = $json['date'];
 				$article[$i]['avatar'] = $json['avatar'];
 				$article[$i]['wall'] = $json['wall'];
+				$article[$i]['ads'] = $json['ads'];
 				$article[$i]['href'] = $file;
 				$i++;
 			}
