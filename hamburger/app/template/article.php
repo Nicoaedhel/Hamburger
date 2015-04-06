@@ -1,8 +1,5 @@
-<?php $app->render('header.php', array(
-      'json' => $json, 
-      'my_hamburger' => $my_hamburger
-    )); // load ui ?>
-<div id="wall" style="background : url('<?= $path; ?>my_hamburger/article/<?= $article?>/images/wall.jpg'); background-size: cover; " >
+<?php $app->render('header.php', array('path' => $path, 'my_hamburger' => $my_hamburger)); // load ui ?>
+<div id="wall" style="background : url('<?= $path; ?>my_hamburger/article/<?= $article?>/images/<?= $json['wall']?>'); background-size: cover; " >
  	<div class="row">
     <div class="large-12 columns">
       <center>
