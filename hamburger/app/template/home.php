@@ -1,14 +1,17 @@
 <?php $app->render('header.php', array('path' => $path)); // load ui ?>
-      <div id="wall" style="background : url('<?= $path; ?>my_hamburger/wall.jpg'); background-size: cover; " >
+      <div id="wall" style="background : url('<?= $path; ?>my_hamburger/<?= $my_hamburger['image_wall_blog']; ?>'); background-size: cover; z-index:999 " >
        	<div class="row">
           <div class="large-12 columns">
             <center>
-              <h1>Welcome to Hamburger</h1>
-              <h2>nOm nOm nOm nOm !</h2>
+              <a href="">
+                <h1><?= $my_hamburger['title_blog']; ?></h1>
+                <h2><?= $my_hamburger['subtitle_blog']; ?></h2>
+              </a>
             </center>
           </div>
         </div>
       </div>
+     
 
       <div id="content">
         <div class="row">

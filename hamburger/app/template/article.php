@@ -7,8 +7,11 @@
  	<div class="row">
     <div class="large-12 columns">
       <center>
-        <h1><?= $json['title']?></h1>
-        <h2><?= $json['subtitle']?></h2>
+        <a href="">
+          <h1><?= $json['title']?></h1>
+          <h2><?= $json['subtitle']?></h2>
+        </a>
+
       </center>
     </div>
   </div>
@@ -23,7 +26,7 @@
         <li class="current"><a href="#"><?= $json['title']?></a></li>
       </ul>
 
-      <div id="post_info" style="display:left">
+      <div id="post_info">
         <img src="<?= $path; ?>my_hamburger/avatar/<?= $json['avatar']?>" />
         <span class="mention"><?= $json['author']?> <?= $json['date']?></span>
       </div>
@@ -42,8 +45,8 @@
       <div class="post_article_link">
         <hr />
         <p>
-          <a href="" style="float:left;">&laquo; Previous - Welcome to Hamburger !</a>
-          <a href="" style="float:right;">Welcome to Hamburger ! - Next &raquo; </a>
+          <a href="<?= $previous_href?>" style="float:left;">&laquo; Previous - <?= $previous_title?></a>
+          <a href="<?= $next_href?>" style="float:right;"><?= $next_title?> ! - Next &raquo; </a>
         </p>
       </div>
 
