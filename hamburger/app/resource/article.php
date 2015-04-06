@@ -104,6 +104,7 @@ function _article_view($article){
 		$json = json_decode(file_get_contents("my_hamburger/article/$article/info.json"), true);
 		$json['date'] = "on ".date("F j, Y", strtotime($json['date']));
 		$md =  \Michelf\MarkdownExtra::defaultTransform(file_get_contents("my_hamburger/article/$article/article.md"));
+		$my_hamburger['title_blog'] = $json['title'];
 		$app->render('article.php', array(
 			'json' => $json, 
 			'md' => $md,
@@ -113,6 +114,7 @@ function _article_view($article){
 			'previous_title' => $previous_title,
 			'previous_href' => $previous_href,
 			'app' => $app,
+			'my_hamburger' => $my_hamburger,
 			'path' => $path
 		)); // load ui
 	}

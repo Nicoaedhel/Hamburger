@@ -1,7 +1,6 @@
 <?php $app->render('header.php', array(
       'json' => $json, 
-      'article' => $article,
-      'app' => $app
+      'my_hamburger' => $my_hamburger
     )); // load ui ?>
 <div id="wall" style="background : url('<?= $path; ?>my_hamburger/article/<?= $article?>/images/wall.jpg'); background-size: cover; " >
  	<div class="row">

@@ -1,4 +1,4 @@
-<?php $app->render('header.php', array('path' => $path)); // load ui ?>
+<?php $app->render('header.php', array('path' => $path, 'my_hamburger' => $my_hamburger)); // load ui ?>
       <div id="wall" style="background : url('<?= $path; ?>my_hamburger/<?= $my_hamburger['image_wall_blog']; ?>'); background-size: cover; z-index:999 " >
        	<div class="row">
           <div class="large-12 columns">
