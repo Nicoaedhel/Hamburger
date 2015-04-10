@@ -9,5 +9,6 @@
     <script src="<?= $path; ?>hamburger/public/assets/jquery/dist/jquery.min.js"></script>
     <script src="<?= $path; ?>hamburger/public/assets/foundation/js/foundation.min.js"></script>
     <script src="<?= $path; ?>hamburger/public/js/app.js"></script>
+    <script src="<?= $path; ?>hamburger/public/js/rrssb.js"></script>
   </body>
 </html>

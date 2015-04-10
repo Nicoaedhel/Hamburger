@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?= $my_hamburger['title_blog']; ?></title>
     <link rel="stylesheet" href="<?= $path; ?>hamburger/public/css/app.css" />
+    <link rel="stylesheet" href="<?= $path; ?>hamburger/public/css/rrssb.css" />
     <script src="<?= $path; ?>hamburger/public/assets/modernizr/modernizr.js"></script>
   </head>
   <body>
