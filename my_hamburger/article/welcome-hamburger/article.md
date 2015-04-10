@@ -6,7 +6,7 @@ Integrating comments via Disqus will be implemented. And a next step is a custom
 Want to review my work or help out on Hamburger? There is a github account you can find here [https://github.com/Nicoaedhel/Hamburger](https://github.com/Nicoaedhel/Hamburger).
 
 Markdown? What's this?
-The Markdown syntax is a system that allows to page content easily. Here's a link that will tell you more about Markdown syntax and all its possibilities.[http://daringfireball.net/projects/markdown/syntax#link](http://daringfireball.net/projects/markdown/syntax#link) .
+The Markdown syntax is a system that allows to page content easily. Here's a link that will tell you more about Markdown syntax and all its possibilities. [Link here](http://daringfireball.net/projects/markdown/syntax#link).
 
 Now kitty cat dance ! 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/SaA_cs4WZHM" frameborder="0" allowfullscreen></iframe>
