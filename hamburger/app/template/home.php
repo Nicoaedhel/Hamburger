@@ -34,7 +34,7 @@
               <div class="post_list_content">
                 <div class="post_list_description">
                   <p>
-                   <?= $article[0]['ads']; ?> <br /><a href="article/<?= $article[0]['href']; ?>">Read +</a>
+                   <?= $article[0]['ads']; ?> <br /><a href="article/<?= $article[0]['href']; ?>">Read more</a>
                   </p>
                 </div>
               </div>
@@ -67,7 +67,7 @@
                         <div class="post_list_content">
                           <div class="post_list_description">
                             <p>
-                             '.$article[$i]['ads'].' <br /><a href="article/'.$article[$i]['href'].'">Read +</a>
+                             '.$article[$i]['ads'].' <br /><a href="article/'.$article[$i]['href'].'">Read more</a>
                             </p>
                           </div>
                         </div>
@@ -96,7 +96,7 @@
                         <div class="post_list_content">
                           <div class="post_list_description">
                             <p>
-                             '.$article[$i]['ads'].' <br /><a href="article/'.$article[$i]['href'].'">Read +</a>
+                             '.$article[$i]['ads'].' <br /><a href="article/'.$article[$i]['href'].'">Read more</a>
                             </p>
                           </div>
                         </div>
@@ -125,7 +125,7 @@
                         <div class="post_list_content">
                           <div class="post_list_description">
                             <p>
-                             '.$article[$i]['ads'].' <br /><a href="article/'.$article[$i]['href'].'">Read +</a>
+                             '.$article[$i]['ads'].' <br /><a href="article/'.$article[$i]['href'].'">Read more</a>
                             </p>
                           </div>
                         </div>
