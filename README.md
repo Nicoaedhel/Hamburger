@@ -1,5 +1,7 @@
 # Welcome to Hamburger !
 
+![hamburger](my_hamburger/wall.jpg)
+
 Hamburger? What's this ? Well it's a simple, fast and more convenient blogging system. Hamburger stores your posts in files and using the Markdown editing syntax. No database, no interface, and you just use your favorite text editor to write your articles.
 
 What's next ?
