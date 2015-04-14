@@ -8,6 +8,7 @@ Want to review my work or help out on Hamburger? There is a github account you c
 Markdown? What's this?
 The Markdown syntax is a system that allows to page content easily. Here's a link that will tell you more about Markdown syntax and all its possibilities. [Link here](http://daringfireball.net/projects/markdown/syntax#link).
 
+![hamburger](../my_hamburger/article/welcome-hamburger/images/hamburger.jpg)
 
 Now kitty cat dance ! 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/SaA_cs4WZHM" frameborder="0" allowfullscreen></iframe>
