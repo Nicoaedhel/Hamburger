@@ -12,4 +12,7 @@ Want to review my work or help out on Hamburger? There is a github account you c
 Markdown? What's this?
 The Markdown syntax is a system that allows to page content easily. Here's a link that will tell you more about Markdown syntax and all its possibilities.[http://daringfireball.net/projects/markdown/syntax#link](http://daringfireball.net/projects/markdown/syntax#link) .
 
-![screenshot interface](screenshot.jpeg)
+
+<p align="center">
+  <img src="https://github.com/Nicoaedhel/Hamburger/raw/master/screenshot.jpeg?raw=true" alt="Screenshot interface"/>
+</p>
