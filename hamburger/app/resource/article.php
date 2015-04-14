@@ -7,7 +7,7 @@ $app->get(    '/article/:article/',            		'_article_view');
 function _article_list(){
 	
 	$app = \Slim\Slim::getInstance();
-	$path = "./";
+	$path = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 	$article = [];
 	$i=0;
 	if($dir = opendir("my_hamburger/article/")){
@@ -37,6 +37,8 @@ function _article_list(){
 		$i++;
 	}
 	$my_hamburger = json_decode(file_get_contents("my_hamburger/my_hamburger.json"), true);
+	$my_hamburger['image'] = $path.'my_hamburger/'.$my_hamburger['image_wall_blog'];
+	$my_hamburger['ads'] = $my_hamburger['title_blog'].' '.$my_hamburger['subtitle_blog'];
 	$app->render('home.php', array(
 		'app' => $app, 
 		'path' => $path, 
@@ -48,7 +50,7 @@ function _article_list(){
 
 function _article_view($article){
 
-	$path = "../"; 
+	$path = str_replace('/article/'.$article, '/', "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
 	$app = \Slim\Slim::getInstance();
 	if(file_exists("my_hamburger/article/$article")){
 		$article_list = [];
@@ -105,6 +107,8 @@ function _article_view($article){
 		$json['date'] = "on ".date("F j, Y", strtotime($json['date']));
 		$md =  \Michelf\MarkdownExtra::defaultTransform(file_get_contents("my_hamburger/article/$article/article.md"));
 		$my_hamburger['title_blog'] = $json['title'];
+		$my_hamburger['ads'] = $json['ads'];
+		$my_hamburger['image'] = $path.'my_hamburger/article/'.$article.'/images/'.$json['wall'];
 		$app->render('article.php', array(
 			'json' => $json, 
 			'md' => $md,
